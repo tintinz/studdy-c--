@@ -32,9 +32,8 @@ int main()//menyn (ska flyttas)
 }
 void hello()
 {
-	end();
 	cout<<"Hallo World\n";
-	end();
+	system("pause");
 }// Print hello world och åter vänder //printar Hello world
 void turnaround()
 {
