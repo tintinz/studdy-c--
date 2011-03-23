@@ -2,12 +2,10 @@
 #include <string>
 using namespace std;
 
-
-void hello();
+void hello();//Funktions declarations
 void turnaround();
 void end();
 void name_counter();
-
 
 int main()//menyn (ska flyttas)
 {
@@ -32,16 +30,19 @@ int main()//menyn (ska flyttas)
 		system("cls");
 	}
 }
-void hello(){
+void hello()
+{
 	end();
 	cout<<"Hallo World\n";
 	end();
 }// Print hello world och åter vänder //printar Hello world
-void turnaround(){
-cout<<"ERROR! BRB!\n";
-end();
+void turnaround()
+{
+	cout<<"Comming soon!\n";
+	end();
 }
-void name_counter(){
+void name_counter()
+{
 	char name[31];
 	
 	cout<<"Vad heter du?\n";
@@ -51,11 +52,12 @@ void name_counter(){
 		 <<"Variabeln name kan man ha " << sizeof(name) << " bokstäver\n";
 	end();
 }
-void end(){
+void end()
+{
 	cout<<endl;
-system("pause");
-system("cls");
-main();
+	system("pause");
+	system("cls");
+	main();
 }
 
 
